@@ -11,8 +11,7 @@ root.render(
   <React.StrictMode>
   <BrowserRouter>
 
-    {/* <App /> */}
-    <ParentComponent/>
+    <App />
   </BrowserRouter>
   </React.StrictMode>
 );
