@@ -1,0 +1,8 @@
+.upper{
+    display: flex;
+}
+@media print {
+    .navbar {
+      display: none;
+    }
+  }

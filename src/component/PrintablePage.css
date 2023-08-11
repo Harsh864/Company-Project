@@ -1,0 +1,32 @@
+@media print {
+    @page {
+      size: A4;
+      margin: 0;
+    }
+  
+    body {
+      margin: 1.27cm; /* 1cm = 2.54cm (default margin in inches) */
+    }
+  
+    .printable-page {
+      page-break-after: always; /* Optional, adds a page break after each .printable-page div */
+      height: '100%';
+       overflow: 'hidden';
+       position: relative; /* Set the parent container as a positioning context */
+    }
+  }
+  /* PrintablePage.css */
+
+  
+  .watermark {
+    position: absolute; /* Position the watermark */
+    top: 50%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%) rotate(-45deg); /* Center and rotate the watermark */
+    opacity: 0.3; /* Adjust the opacity of the watermark */
+    font-size: 80px; /* Adjust the font size */
+    color: lightgray; /* Adjust the color of the watermark text */
+    pointer-events: none; /* Ensure the watermark doesn't interfere with mouse events */
+  }
+  
+  
